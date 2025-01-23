@@ -1,0 +1,18 @@
+{
+  "name": "Java Codespace",
+  "image": "mcr.microsoft.com/devcontainers/java:21",
+  "features": {
+    "ghcr.io/devcontainers/features/maven:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "java.home": "/usr/lib/jvm/java-21-openjdk"
+      },
+      "extensions": [
+        "vscjava.vscode-java-pack"
+      ]
+    }
+  },
+  "postCreateCommand": "mvn clean install",
+}
